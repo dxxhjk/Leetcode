@@ -6,15 +6,19 @@ type TreeNode struct {
     Right *TreeNode
 }
 
-func buildTree(nums []int) *TreeNode {
+func BuildTree(nums []interface{}) *TreeNode {
     if len(nums) == 0 {
         return new(TreeNode)
     }
     treeNodeArray := make([]*TreeNode, 0)
     for i := 0; i < len(nums); i++ {
-        tempNode := new(TreeNode)
-        tempNode.Val = nums[i]
-        treeNodeArray = append(treeNodeArray, tempNode)
+        if nums[i] != nil {
+            tempNode := new(TreeNode)
+            tempNode.Val = nums[i].(int)
+            treeNodeArray = append(treeNodeArray, tempNode)
+        } else {
+            treeNodeArray = append(treeNodeArray, nil)
+        }
     }
     for i := 0; i < len(nums) / 2; i++ {
         leftIndex, rightIndex := i * 2 + 1, i * 2 + 2
