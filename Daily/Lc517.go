@@ -1,6 +1,6 @@
-package answers
+package Daily
 
-import "Leetcode/structs"
+import "Leetcode/Structs"
 
 /*
 993. 二叉树的堂兄弟节点
@@ -15,16 +15,16 @@ import "Leetcode/structs"
 按层次遍历数，设置并维护层次标志符和兄弟标志符，同一层且不是兄弟即满足要求
  */
 
-func Lc517IsCousins(root *structs.TreeNode, x, y int) bool {
+func Lc517IsCousins(root *Structs.TreeNode, x, y int) bool {
 	if root == nil {
 		return false
 	}
-	treeNodeArray := make([]*structs.TreeNode, 0)
+	treeNodeArray := make([]*Structs.TreeNode, 0)
 	treeNodeArray = append(treeNodeArray, root)
-	brotherNode := new(structs.TreeNode)
+	brotherNode := new(Structs.TreeNode)
 	treeNodeArray = append(treeNodeArray, brotherNode)
 	brotherFlag := false
-	levelNode := new(structs.TreeNode)
+	levelNode := new(Structs.TreeNode)
 	treeNodeArray = append(treeNodeArray, levelNode)
 	findFlag := false
 	tar := x

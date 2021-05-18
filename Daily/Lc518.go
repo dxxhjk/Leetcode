@@ -1,4 +1,4 @@
-package answers
+package Daily
 
 /*
 1442. 形成两个异或相等数组的三元组数目
