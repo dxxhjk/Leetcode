@@ -1,11 +1,11 @@
 package main
 
 import (
-	"Leetcode/Hot100"
+	"Leetcode/Daily"
 	"fmt"
 )
 
 func main()  {
-	ret := Hot100.Hot1TwoSum([]int{3,3}, 6)
+	ret := Daily.Lc519KthLargestValue([][]int{{5, 2}, {1, 6}}, 3)
 	fmt.Println(ret)
 }
