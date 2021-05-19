@@ -6,6 +6,6 @@ import (
 )
 
 func main()  {
-	ret := Daily.Lc519KthLargestValue([][]int{{5, 2}, {1, 6}}, 3)
+	ret := Daily.Lc516FindMaximumXOR([]int{2, 7})
 	fmt.Println(ret)
 }
