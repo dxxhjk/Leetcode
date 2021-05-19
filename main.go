@@ -6,6 +6,6 @@ import (
 )
 
 func main()  {
-	ret := Daily.Lc516FindMaximumXOR([]int{2, 7})
+	ret := Daily.Lc515RomanToInt("MCMXCIV")
 	fmt.Println(ret)
 }
