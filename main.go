@@ -6,6 +6,6 @@ import (
 )
 
 func main()  {
-	ret := Daily.Lc515RomanToInt("MCMXCIV")
+	ret := Daily.Lc514IntToRoman(58)
 	fmt.Println(ret)
 }
