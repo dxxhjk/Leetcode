@@ -6,6 +6,6 @@ import (
 )
 
 func main()  {
-	ret := Daily.Lc514IntToRoman(58)
+	ret := Daily.Lc513NumWays(4, 2)
 	fmt.Println(ret)
 }
