@@ -2,7 +2,6 @@ package Daily
 
 import (
 	"Leetcode/Structs"
-	"fmt"
 )
 
 /*
@@ -36,7 +35,9 @@ func Lc519KthLargestValue(matrix [][]int, k int) int {
 		vLine := make([]int, len(matrix[0]))
 		v = append(v, vLine)
 	}
-	h := Structs.MakeHeap(k)
+	h := Structs.MakeHeap(k, func(a, b interface{})bool {
+		return a.(int) >= b.(int)
+	})
 	v[0][0] = matrix[0][0]
 	h.Push(v[0][0])
 	for i := 1; i < len(matrix); i++ {
@@ -53,7 +54,5 @@ func Lc519KthLargestValue(matrix [][]int, k int) int {
 			h.Push(v[i][j])
 		}
 	}
-	fmt.Println(v)
-	fmt.Println(h)
-	return h.GetMin()
+	return h.GetMin().(int)
 }

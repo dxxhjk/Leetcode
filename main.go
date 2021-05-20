@@ -6,6 +6,6 @@ import (
 )
 
 func main()  {
-	ret := Daily.Lc513NumWays(4, 2)
+	ret := Daily.Lc520TopKFrequent([]string{"i", "love", "leetcode", "i", "love", "coding"}, 2)
 	fmt.Println(ret)
 }
