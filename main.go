@@ -6,6 +6,6 @@ import (
 )
 
 func main()  {
-	ret := Daily.Lc512XorQueries([]int{4,8,2,10}, [][]int{{2,3},{1,3},{0,0},{0,3}})
+	ret := Daily.Lc521MaxUncrossedLines([]int{2,5,1,2,5}, []int{10,5,2,1,5,2})
 	fmt.Println(ret)
 }
