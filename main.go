@@ -6,6 +6,6 @@ import (
 )
 
 func main()  {
-	ret := Daily.Lc522XorGame([]int{1, 1, 2})
+	ret := Daily.Lc511Decode([]int{6,5,4,6})
 	fmt.Println(ret)
 }
