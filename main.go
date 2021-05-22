@@ -6,6 +6,6 @@ import (
 )
 
 func main()  {
-	ret := Daily.Lc521MaxUncrossedLines([]int{2,5,1,2,5}, []int{10,5,2,1,5,2})
+	ret := Daily.Lc522XorGame([]int{1, 1, 2})
 	fmt.Println(ret)
 }
