@@ -6,6 +6,6 @@ import (
 )
 
 func main()  {
-	ret := Daily.Lc511Decode([]int{6,5,4,6})
+	ret := Daily.Lc523MaximizeXor([]int{5,2,4,6,6,3}, [][]int{{12,4}, {8,1}, {6,3}})
 	fmt.Println(ret)
 }

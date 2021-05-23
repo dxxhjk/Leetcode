@@ -13,23 +13,23 @@ import "fmt"
 用一个32层的字典树存储读过的每一个数，每次读新数就去树里找异或最大值，并将自己存入字典树
  */
 
-type TrieNode struct {
-	children [2]*TrieNode
+type trieNode516 struct {
+	children [2]*trieNode516
 }
 
-func(t *TrieNode) Add(num int) {
+func(t *trieNode516) add(num int) {
 	p := t
 	for i := 31; i >= 0; i-- {
 		a := (num >> i) & 1
 		if p.children[a] == nil {
-			newNode := new(TrieNode)
+			newNode := new(trieNode516)
 			p.children[a] = newNode
 		}
 		p = p.children[a]
 	}
 }
 
-func(t *TrieNode) Find(num int) int {
+func(t *trieNode516) find(num int) int {
 	p := t
 	ans := 0
 	for i := 31; i>= 0; i-- {
@@ -48,11 +48,11 @@ func(t *TrieNode) Find(num int) int {
 }
 
 func Lc516FindMaximumXOR(nums []int) int {
-	t := new(TrieNode)
+	t := new(trieNode516)
 	ans := 0
 	for i := 0; i < len(nums); i++ {
-		t.Add(nums[i])
-		tempXor := t.Find(nums[i])
+		t.add(nums[i])
+		tempXor := t.find(nums[i])
 		if tempXor > ans {
 			ans = tempXor
 		}
