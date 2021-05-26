@@ -6,7 +6,7 @@ import (
 )
 
 func main()  {
-	ret := Daily.Lc524StrangePrinter("abababac")
+	ret := Daily.Lc526ReverseParentheses("(ed(et(oc))el)")
 	fmt.Println(ret)
 
 }
