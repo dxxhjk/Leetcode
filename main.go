@@ -6,7 +6,7 @@ import (
 )
 
 func main()  {
-	ret := Daily.Lc526ReverseParentheses("(ed(et(oc))el)")
+	ret := Daily.Lc527HammingDistance(1,4)
 	fmt.Println(ret)
 
 }
