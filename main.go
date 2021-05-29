@@ -6,7 +6,7 @@ import (
 )
 
 func main()  {
-	ret := Daily.Lc528TotalHammingDistance([]int{4,14,2})
+	ret := Daily.Lc529NumSubMatrixSumTarget([][]int{{0,1,0},{1,1,1},{0,1,0}}, 0)
 	fmt.Println(ret)
 
 }
