@@ -6,7 +6,7 @@ import (
 )
 
 func main()  {
-	ret := Daily.Lc529NumSubMatrixSumTarget([][]int{{0,1,0},{1,1,1},{0,1,0}}, 0)
+	ret := Daily.Lc530AnotherConvert("PAYPALISHIRING", 3)
 	fmt.Println(ret)
 
 }
