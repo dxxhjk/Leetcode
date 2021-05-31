@@ -6,7 +6,7 @@ import (
 )
 
 func main()  {
-	ret := Daily.Lc530AnotherConvert("PAYPALISHIRING", 3)
+	ret := Daily.Lc531IsPowerOfFour(131072)
 	fmt.Println(ret)
 
 }
