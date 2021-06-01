@@ -1,4 +1,4 @@
-package Daily
+package D2021_05
 
 /*
 1734. 解码异或后的排列

@@ -1,7 +1,7 @@
-package Daily
+package D2021_05
 
 /*
-13. 罗马数字转整数
+12. 整数转罗马数字
 罗马数字包含以下七种字符: I，V，X，L，C，D 和 M。
 字符          数值
 I             1
@@ -21,27 +21,63 @@ M             1000
 I 可以放在 V (5) 和 X (10) 的左边，来表示 4 和 9。
 X 可以放在 L (50) 和 C (100) 的左边，来表示 40 和 90。
 C 可以放在 D (500) 和 M (1000) 的左边，来表示 400 和 900。
-给定一个罗马数字，将其转换成整数。输入确保在 1 到 3999 的范围内。
+给你一个整数，将其转为罗马数字。
  */
 
-func Lc515RomanToInt(s string) int {
-	m := make(map[byte]int, 0)
-	m['I'] = 1
-	m['V'] = 5
-	m['X'] = 10
-	m['L'] = 50
-	m['C'] = 100
-	m['D'] = 500
-	m['M'] = 1000
-	ans := 0
-	for p := 0; p < len(s); p++ {
-		if p + 1 < len(s) && m[s[p]] < m[s[p + 1]] {
-			ans -= m[s[p]]
-			p++
-			ans += m[s[p]]
-		} else {
-			ans += m[s[p]]
-		}
+func Lc514IntToRoman(num int) string {
+	thousand, hundred, ten, one := num / 1000, (num % 1000) / 100, (num % 100) / 10, num % 10
+	ans := ""
+	for thousand != 0 {
+		ans += "M"
+		thousand--
+	}
+	if hundred == 9 {
+		ans += "CM"
+		hundred -= 9
+	}
+	if hundred >= 5 {
+		ans += "D"
+		hundred -= 5
+	}
+	if hundred == 4 {
+		ans += "CD"
+		hundred -= 4
+	}
+	for hundred != 0 {
+		ans += "C"
+		hundred--
+	}
+	if ten == 9 {
+		ans += "XC"
+		ten -= 9
+	}
+	if ten >= 5 {
+		ans += "L"
+		ten -= 5
+	}
+	if ten == 4 {
+		ans += "XL"
+		ten -= 4
+	}
+	for ten != 0 {
+		ans += "X"
+		ten--
+	}
+	if one == 9 {
+		ans += "IX"
+		one -= 9
+	}
+	if one >= 5 {
+		ans += "V"
+		one -= 5
+	}
+	if one == 4 {
+		ans += "IV"
+		one -= 4
+	}
+	for one != 0 {
+		ans += "I"
+		one--
 	}
 	return ans
 }

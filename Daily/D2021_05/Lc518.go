@@ -1,4 +1,4 @@
-package Daily
+package D2021_05
 
 /*
 1442. 形成两个异或相等数组的三元组数目

@@ -1,4 +1,4 @@
-package Daily
+package D2021_05
 
 /*
 1310. 子数组异或查询
