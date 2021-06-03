@@ -6,7 +6,7 @@ import (
 )
 
 func main()  {
-	ret := D2021_06.Lc602CheckSubarraySum([]int{23,2,4,6,6}, 7)
+	ret := D2021_06.Lc603FindMaxLength([]int{0, 1,0})
 	fmt.Println(ret)
 
 }
