@@ -1,12 +1,12 @@
 package Structs
 
 type TreeNode struct {
-    Val int
+    Val interface{}
     Left *TreeNode
     Right *TreeNode
 }
 
-func BuildTree(nums []interface{}) *TreeNode {
+func NewTree(nums []interface{}) *TreeNode {
     if len(nums) == 0 {
         return new(TreeNode)
     }
@@ -14,7 +14,7 @@ func BuildTree(nums []interface{}) *TreeNode {
     for i := 0; i < len(nums); i++ {
         if nums[i] != nil {
             tempNode := new(TreeNode)
-            tempNode.Val = nums[i].(int)
+            tempNode.Val = nums[i]
             treeNodeArray = append(treeNodeArray, tempNode)
         } else {
             treeNodeArray = append(treeNodeArray, nil)
