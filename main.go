@@ -6,6 +6,6 @@ import (
 )
 
 func main() {
-	ret := D2021_07.Lc702MaxIceCream([]int{1,3,2,4,1}, 7)
+	ret := D2021_07.Lc706DisplayTable()
 	fmt.Println(ret)
 }
