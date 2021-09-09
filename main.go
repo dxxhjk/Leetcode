@@ -1,11 +1,11 @@
 package main
 
 import (
-	"Leetcode/Daily/D2021_08"
+	"Leetcode/Daily/D2021_09"
 	"fmt"
 )
 
 func main() {
-	ret := D2021_08.Lc810NumberOfArithmeticSlices([]int{1,2,3,4, 3,4,5})
+	ret := D2021_09.Lc909FullJustify([]string{"What","must","be","acknowledgment","shall","be"},16)
 	fmt.Println(ret)
 }
