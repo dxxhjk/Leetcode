@@ -6,6 +6,6 @@ import (
 )
 
 func main() {
-	ret := D2021_09.Lc909FullJustify([]string{"What","must","be","acknowledgment","shall","be"},16)
+	ret := D2021_09.Lc910ChalkReplacer([]int{3,4,1,2}, 25)
 	fmt.Println(ret)
 }
