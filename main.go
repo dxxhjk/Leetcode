@@ -6,6 +6,6 @@ import (
 )
 
 func main() {
-	ret := D2021_09.Lc910ChalkReplacer([]int{3,4,1,2}, 25)
+	ret := D2021_09.Lc913NumberOfBoomerangs([][]int{{0,0},{1,0},{2,0}})
 	fmt.Println(ret)
 }
