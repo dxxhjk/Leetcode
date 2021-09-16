@@ -6,6 +6,6 @@ import (
 )
 
 func main() {
-	ret := D2021_09.Lc913NumberOfBoomerangs([][]int{{0,0},{1,0},{2,0}})
+	ret := D2021_09.Lc916FindWords([][]byte{{'A', 'B', 'C', 'E'}, {'S', 'F', 'C', 'S'}, {'A', 'D', 'E', 'E'}}, []string{"SEE"})
 	fmt.Println(ret)
 }
