@@ -6,6 +6,6 @@ import (
 )
 
 func main() {
-	ret := D2021_09.Lc914FindLongestWord("abpcplea", []string{"ale", "apple", "monkey", "plea"})
+	ret := D2021_09.Lc919MinSteps(6)
 	fmt.Println(ret)
 }
