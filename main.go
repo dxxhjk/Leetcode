@@ -2,10 +2,12 @@ package main
 
 import (
 	"Leetcode/Daily/D2021_09"
+	"Leetcode/Structs"
 	"fmt"
 )
 
 func main() {
-	ret := D2021_09.Lc920FindNumberOfLIS([]int{1, 3, 5, 4, 7})
+	list := Structs.NewList([]interface{}{1, 2, 3})
+	ret := D2021_09.Lc922SplitListToParts(list, 5)
 	fmt.Println(ret)
 }
