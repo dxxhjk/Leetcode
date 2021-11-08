@@ -6,6 +6,6 @@ import (
 )
 
 func main() {
-	ret := D2021_11.Lc1104IsPerfectSquare(16)
+	ret := D2021_11.Lc1108GetHint("1807", "7810")
 	fmt.Println(ret)
 }
