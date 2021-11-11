@@ -1,11 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"Leetcode/Daily/D2021_11"
+	"fmt"
+)
 
 func main() {
-	str := [3]int{1,2,3}
-	fmt.Println(&str[0])
-	for _, v := range str {
-		fmt.Println(&v, v)
-	}
+	ret := D2021_11.Lc1111KInversePairs(3,1)
+	fmt.Println(ret)
 }
