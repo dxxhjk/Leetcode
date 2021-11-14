@@ -6,6 +6,6 @@ import (
 )
 
 func main() {
-	ret := D2021_11.Lc1111KInversePairs(3,1)
+	ret := D2021_11.Lc1114Constructor()
 	fmt.Println(ret)
 }
