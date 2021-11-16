@@ -9,6 +9,6 @@ import "math"
 找出并返回 n 轮后有多少个亮着的灯泡。
  */
 
-func Lc1116BulbSwitch(n int) int {
+func Lc1115BulbSwitch(n int) int {
 	return int(math.Sqrt(float64(n) + 0.5))
 }
