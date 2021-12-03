@@ -1,11 +1,11 @@
 package main
 
 import (
-	"Leetcode/Daily/D2021_11"
+	"Leetcode/Daily/D2021_12"
 	"fmt"
 )
 
 func main() {
-	ret := D2021_11.Lc1117MaxProduct([]string{"a","ab","abc","d","cd","bcd","abcd"})
+	ret := D2021_12.Lc1203LargestSumAfterKNegations([]int{3, -1, 0, 2}, 3)
 	fmt.Println(ret)
 }
