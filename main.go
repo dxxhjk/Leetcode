@@ -6,8 +6,8 @@ import (
 )
 
 func main() {
-	ans := D2022_01.Lc0111IsEscapePossible([][]int{}, []int{0,0}, []int{999999,999999})
-	fmt.Println(ans)
+	ans := D2022_01.Lc0112IncreasingTriplet([]int{2,4,-2,-3})
+	fmt.Println(ans, 0x7fffffff)
 }
 
 func isAdditiveNumber(num string) bool {
